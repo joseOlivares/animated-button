@@ -46,6 +46,7 @@
     transform: translate(18px,0px) rotateZ(-180deg);
 }
   
+
 /* Second button animation*/
 
 .btn-home2 {
@@ -56,14 +57,15 @@
   border-radius: 4px;
 
   background-color:rgb(225, 223, 233);
-  transition: all .5s ease-out;
+   transition: all .3s ease-out;
+
 }
 
 .btn-home-text2 {
   color:#004b93 ;
   text-align: center;
   border:0px;
-  transition: all .4s ease-out;
+  transition: all .2s ease-out;
   display: block;
   margin-right: 16px;
 }
@@ -73,11 +75,32 @@
   transition: all 0.4s ease;
   margin-right: 2px;
 }
-.btn-home2:hover .animar-flecha2 {
-  /* moviendo a la derecha y rotando la flecha*/
-  transform: translate(18px,0px) rotateZ(-180deg);
+
+.btn-home2:focus .animar-flecha2{
+    animation: salida-flecha .6s ease-out; 
+  /*transform: translateX(-60px);*/
 }
 
+.btn-home2:focus .btn-home-text2{
+  color: transparent ;  
+}
 
+.btn-home2:after {
+  color: transparent ;  
+}
+
+@keyframes salida-flecha{
+  from{
+     transform: rotateZ(-90deg) ; 
+  }
+  
+  25%{
+     transform: rotateZ(-180deg) ; 
+  }
+  
+  to{
+    transform: translateX(-140px) rotateZ(-180deg);
+  }
+}
   
   
