@@ -47,5 +47,38 @@
 }
   
 
+
+.btn-home2 {
+  border: 0px solid wheat;
+  border-color: wheat;
+  height: 36px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 2px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  background-color:wheat;
+  transition: all .5s ease-out;
+}
+
+.btn-home-text {
+  color:#004b93 ;
+  text-align: center;
+  border:0px;
+  color: white;
+  transition: all .4s ease-out;
+  display: block;
+  margin-right: 16px;
+}
+
+/*Rotando flecha*/
+.btn-home2 .animar-flecha2{
+  transition: all 0.4s ease;
+  margin-right: 2px;
+}
+.btn-home2:hover .animar-flecha2 {
+  /* moviendo a la derecha y rotando la flecha*/
+  transform: translate(18px,0px) rotateZ(-180deg);
+}
+
+
   
   
