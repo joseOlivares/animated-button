@@ -48,6 +48,9 @@
   
 
 /* Second button animation*/
+.animar-flecha2{
+  margin-left: 12px;
+}
 
 .btn-home2 {
   border: 0px solid wheat;
@@ -78,16 +81,14 @@
 
 .btn-home2:focus .animar-flecha2{
     animation: salida-flecha .6s ease-out; 
-  /*transform: translateX(-60px);*/
+    animation-fill-mode: forwards;
 }
 
 .btn-home2:focus .btn-home-text2{
   color: transparent ;  
 }
 
-.btn-home2:after {
-  color: transparent ;  
-}
+
 
 @keyframes salida-flecha{
   from{
