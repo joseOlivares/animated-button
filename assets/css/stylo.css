@@ -46,7 +46,7 @@
     transform: translate(18px,0px) rotateZ(-180deg);
 }
   
-
+/* Second button animation*/
 
 .btn-home2 {
   border: 0px solid wheat;
@@ -59,7 +59,7 @@
   transition: all .5s ease-out;
 }
 
-.btn-home-text {
+.btn-home-text2 {
   color:#004b93 ;
   text-align: center;
   border:0px;
