@@ -6,11 +6,10 @@
     border-radius: 4px;
   
     background-color:#004b93;
-    /*background: linear-gradient(to right, black 50%, white 50%);*/
     background: linear-gradient(to right, white 50%, #004b93 50% );
-    background-size: 200% 100%;
+    background-size: 400% 200%;
     background-position: right bottom;
-    transition: all .3s ease-out;
+    transition: all .5s ease-out;
   }
   
   .btn-home:hover  {
@@ -26,7 +25,7 @@
     text-align: center;
     border:0px;
     color: white;
-    transition: all .2s ease-out;
+    transition: all .4s ease-out;
     display: block;
     margin-right: 16px;
   }
