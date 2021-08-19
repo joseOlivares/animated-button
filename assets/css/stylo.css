@@ -48,8 +48,11 @@
   
 
 /* Second button animation*/
+
 .animar-flecha2{
   margin-left: 12px;
+  width: 16px;
+
 }
 
 .btn-home2 {
@@ -60,7 +63,6 @@
   border-radius: 4px;
 
   background-color:rgb(225, 223, 233);
-   transition: all .3s ease-out;
 
 }
 
@@ -68,19 +70,18 @@
   color:#004b93 ;
   text-align: center;
   border:0px;
-  transition: all .2s ease-out;
   display: block;
   margin-right: 16px;
+  /*Aqui definimos la transicion de la animacion*/
+  transition: color .8s;
 }
 
-/*Rotando flecha*/
-.btn-home2 .animar-flecha2{
-  transition: all 0.4s ease;
-  margin-right: 2px;
-}
+
 
 .btn-home2:focus .animar-flecha2{
-    animation: salida-flecha .6s ease-out; 
+    animation-name: vuelta-flecha , salida-flecha;
+    animation-duration: .3s , .4s;
+    animation-delay: 0s, .4s;
     animation-fill-mode: forwards;
 }
 
@@ -89,19 +90,25 @@
 }
 
 
+@keyframes vuelta-flecha{
+  from {
+     transform: rotateZ(-90deg) ; 
+  }
+ 
+  to{
+    transform: rotateZ(-180deg) ;
+  }
+}
 
 @keyframes salida-flecha{
   from{
-     transform: rotateZ(-90deg) ; 
-  }
-  
-  25%{
-     transform: rotateZ(-180deg) ; 
+      transform: rotateZ(-180deg) ; 
+      filter: invert(73%) sepia(92%) saturate(532%) hue-rotate(356deg) brightness(99%) contrast(93%);
   }
   
   to{
     transform: translateX(-140px) rotateZ(-180deg);
+     filter: invert(73%) sepia(92%) saturate(532%) hue-rotate(356deg) brightness(99%) contrast(93%);
   }
 }
-  
-  
+
