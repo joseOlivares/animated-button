@@ -63,7 +63,7 @@
   border-radius: 4px;
 
   background-color:rgb(225, 223, 233);
-
+  width: 220px;
 }
 
 .btn-home-text2 {
@@ -107,7 +107,7 @@
   }
   
   to{
-    transform: translateX(-140px) rotateZ(-180deg);
+    transform: translateX(-160px) rotateZ(-180deg);
      filter: invert(73%) sepia(92%) saturate(532%) hue-rotate(356deg) brightness(99%) contrast(93%);
   }
 }
